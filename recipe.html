@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Recipe Explorer</h1>
+    <nav>
+      <input type="text" id="search-bar" placeholder="Search recipes...">
+      <button id="search-btn">Search</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Filters Section -->
+    <section id="filters">
+      <h2>Filter Recipes</h2>
+      <label for="cuisine">Cuisine:</label>
+      <select id="cuisine">
+        <option value="">All</option>
+        <option value="italian">Italian</option>
+        <option value="mexican">Mexican</option>
+        <option value="indian">Indian</option>
+      </select>
+
+      <label for="diet">Dietary Preference:</label>
+      <select id="diet">
+        <option value="">All</option>
+        <option value="vegan">Vegan</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+
+      <label for="time">Cooking Time:</label>
+      <select id="time">
+        <option value="">All</option>
+        <option value="15">Under 15 minutes</option>
+        <option value="30">Under 30 minutes</option>
+        <option value="60">Under 1 hour</option>
+      </select>
+    </section>
+
+    <!-- Recipe Cards Section -->
+    <section id="recipe-list">
+      <h2>Popular Recipes</h2>
+      <div id="recipes" class="recipe-grid">
+        <!-- Recipe cards will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Favorites Modal -->
+  <div id="favorites-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Your Favorites</h2>
+      <div id="favorites-list">
+        <!-- Favorite recipes will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Recipe Explorer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
