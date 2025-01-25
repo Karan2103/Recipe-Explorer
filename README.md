@@ -8,6 +8,5 @@ Responsive Design: Optimized for both desktop and mobile devices, ensuring a smo
 Interactive Elements: Subtle animations, smooth scrolling, and easy navigation for an engaging experience.
 Technologies Used:
 Frontend: HTML5, CSS3, JavaScript, React (or Vue.js), Bootstrap/Tailwind CSS
-Backend (if applicable): Node.js, MongoDB (for user data and recipes)
 Local Storage: For saving and retrieving favorite recipes
 This project is perfect for anyone looking to explore web development with dynamic functionality, smooth UI/UX design, and modern front-end technologies.
